@@ -1,6 +1,8 @@
 # iCal feed proxy
 This repository contains a 'proxy' to retrieve an iCal feed from external location and forward it to the requester.
 
+Why? Because some booking websites block the opening of their iCal feed by certain tools, so this is a workaround for that.
+
 In the folder `app` you will find:
 - The python script `api.py` which handles the actual API requests
 - requirements.txt which contains the Python packages used
