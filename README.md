@@ -30,7 +30,7 @@ services:
   web:
     build: .
     ports:
-      - "5002:5002"
+      - "5000:5000"
     volumes:
       - .:/src
     environment:
