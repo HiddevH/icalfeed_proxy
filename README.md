@@ -9,7 +9,7 @@ In the folder `app` you will find:
 - Dockerfile with the instructions to build the container
 
 ## Application
-Within the folder `app` there is a script called `api.py`. This script is basically a Flask application which listens on port `5002` for API requests.
+Within the folder `app` there is a script called `api.py`. This script is basically a Flask application which listens on port `5000` for API requests.
 The API requests possible are:
 - `/icalfeed` which returns an iCal feed which is passed from ENV `ICAL_FEED`
 
@@ -19,7 +19,7 @@ The API is supposed to live in a Docker container. A brief overview of its conte
 - Copy requirements.txt and pip install on it
 - Create a non-root User to run the scripts (according to some best practices found at https://pythonspeed.com/docker/)
 - Set environment variables
-- Expose port 5002
+- Expose port 5000
 - Run Flask
 
 ## Docker Compose
@@ -41,6 +41,6 @@ services:
 ## Usage
 
 ```webhook
-<ip>:5002/icalfeed
+<ip>:5000/icalfeed
 ```
 Should return an ical feed
